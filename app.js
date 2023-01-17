@@ -10,7 +10,7 @@ const port = process.env.port || 5000;
 
 const dotsClientId = 'YOUR_CLIENT_ID';
 const dotsSecretKey = 'YOUR_SECRET_KEY';
-const dotsAPIUrl = 'http://127.0.0.1:8080/api';
+const dotsAPIUrl = 'https://pls.senddotssandbox.com/api'; // 'http://127.0.0.1:8080/api' | 'https://api.dots.dev/api'
 
 app.use(express.json());
 
