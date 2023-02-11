@@ -10,7 +10,7 @@
 
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/Send-Dots/dots-js/build/dots.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/Send-Dots/dots-js@3eb9377/build/dots.js"></script>
   <!------ Include the above in your HEAD tag ---------->
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" />
@@ -202,7 +202,7 @@
 
     document.addEventListener('DOMContentLoaded', async () => {
       const dotsClientId = 'YOUR_CLIENT_ID_HERE'
-      const dots = await dotsjs.loadDots(dotsClientId, 'development')
+      const dots = await dotsjs.loadDots(dotsClientId, 'staging')
 
       const form = await dots.form({
         payment_method_type: 'card',
@@ -296,7 +296,7 @@
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            amount: 1000,
+            amount: 100,
           }) // body data type must match "Content-Type" header
         });
 
